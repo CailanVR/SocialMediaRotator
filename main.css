@@ -1,0 +1,39 @@
+:root {
+  --bgColor: transparent;
+  --font: Montserrat;
+  --iconColor: White;
+  --textColor: White;
+  --fontWeight: 600;
+  --iconSize: 200%;
+  --fontSize: 100%;
+}
+html,body {
+  background-color: var(--bgColor);
+  padding: 0;
+  margin: 5;
+  font-family: var(--font);
+  font-weight: var(--fontWeight);
+}
+.holder {
+  position: absolute;
+  opacity: 0;
+}
+.icon,.label {
+  display: inline-block;
+  text-shadow: 3px 3px 4px black;
+}
+.icon {
+  font-size: var(--iconSize);
+  color: var(--iconColor);
+}
+.label {
+  color: var(--textColor);
+  font-size: var(--fontSize);
+  position: absolute;
+  top: 50%;
+  margin-left: 10px;
+  transform: translateY(-50%);
+}
+button {
+  margin-top:100px;
+}
