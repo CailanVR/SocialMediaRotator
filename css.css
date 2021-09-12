@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family={{fontFamily}}&display=swap");
+:root {
+  --bgColor: transparent;
+  --font: {{fontChoice}};
+  --iconColor: {{iconColor}};
+  --textColor: {{textColor}};
+  --fontWeight: {{fontWeight}};
+  --iconSize: {{iconSize}}%;
+  --fontSize: {{fontSize}}%;
+  --textDistance: {{textDistance}}px;
+  --dropShadowX: {{dropShadowX}}px;
+  --dropShadowY: {{dropShadowY}}px;
+  --dropShadowBlur: {{dropShadowBlur}}px;
+  --dropShadowColor: {{dropShadowColor}};
+}
+html,
+body {
+  background-color: var(--bgColor);
+  font-family: var(--font);
+  font-weight: var(--fontWeight);
+}
+.holder {
+  position: absolute;
+  opacity: 0;
+}
+.icon,
+.label {
+  display: inline-block;
+}
+.icon {
+  font-size: var(--iconSize);
+  color: var(--iconColor);
+}
+.label {
+  color: var(--textColor);
+  font-size: var(--fontSize);
+  position: absolute;
+  top: 50%;
+  margin-left: var(--textDistance);
+  transform: translateY(-50%);
+}
+.shadowed {
+  text-shadow: var(--dropShadowX) var(--dropShadowY) var(--dropShadowBlur) var(--dropShadowColor);
+}
+button {
+  margin-top: 100px;
+  display: none;
+}
