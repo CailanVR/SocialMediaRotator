@@ -1,5 +1,5 @@
-var displayTime = 100
-var fadeTime = 500
+var displayTime = 6000
+var fadeTime = 600
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
