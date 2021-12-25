@@ -1,0 +1,59 @@
+:root {
+  /* These are the default settings the page will load upon script failute */
+  --bgColor: transparent;
+  --font: Montserrat;
+  --iconColor: white;
+  --textColor: white;
+  --fontWeight: 600;
+  --iconSize: 400%;
+  --fontSize: 250%;
+  --textDistance: 15px;
+  --dropShadowX: 3px;
+  --dropShadowY: 3px;
+  --dropShadowBlur: 4px;
+  --dropShadowColor: black;
+}
+
+html,
+body {
+  background-color: var(--bgColor);
+  font-family: var(--font);
+  font-weight: var(--fontWeight);
+}
+
+.holder {
+  position: absolute;
+  opacity: 0;
+}
+
+.icon,
+.label {
+  display: inline-block;
+}
+
+.icon {
+  color: var(--iconColor);
+  font-size: var(--iconSize);
+}
+
+.intro,
+.label {
+  color: var(--textColor);
+  font-size: var(--fontSize);
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  margin-left: var(--textDistance);
+  transform: translateY(-50%);
+}
+
+.shadowed {
+  text-shadow: var(--dropShadowX) var(--dropShadowY) var(--dropShadowBlur) var(--dropShadowColor);
+}
+
+button {
+  margin-top: 100px;
+  display: none;
+}
