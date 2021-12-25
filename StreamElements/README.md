@@ -1,0 +1,1 @@
+This version is deprecated. The rotator should continue to function, however it will no longer be updated.
